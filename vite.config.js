@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import { ViteEjsPlugin } from "vite-plugin-ejs";
 import path from "path";
+import { sign } from "crypto";
 
 export default defineConfig({
     // Đường dẫn gốc khi deploy (gh-pages cần đúng path)
@@ -22,6 +23,8 @@ export default defineConfig({
             input: {
                 index: path.resolve(__dirname, "src/index.html"),
                 about: path.resolve(__dirname, "src/about.html"),
+                signin: path.resolve(__dirname, "src/sign-in.html"),
+                signup: path.resolve(__dirname, "src/sign-up.html"),
                 // Thêm trang khác nếu có
             },
         },

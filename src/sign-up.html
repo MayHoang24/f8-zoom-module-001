@@ -3,24 +3,35 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sign In</title>
+        <title>Sign Up</title>
         <%- include("./partials/head.ejs") %>
     </head>
     <body>
-        <div class="sign-in">
-            <section class="sign-in__inner">
-                <div class="sign-in__content">
-                    <h1 class="sign-in__heading">
-                        One account for all services
+        <div class="sign-up">
+            <section class="sign-up__inner">
+                <div class="sign-up__content">
+                    <h1 class="sign-up__heading">
+                        Easy steps to join membership.
                     </h1>
-                    <p class="sign-in__desc">
-                        Hi there! Sign up an account and enjoy your shopping
-                        experience on
-                    </p>
-                    <button class="btn sign-in__btn">CREATE NEW ACCOUNT</button>
+                    <ul class="sign-up__list">
+                        <li class="sign-up__item">
+                            <span>1</span>Sign up using your email.
+                        </li>
+                        <li class="sign-up__item">
+                            <span>2</span>Please click the verification link in
+                            your registered email.
+                        </li>
+                        <li class="sign-up__item">
+                            <span>3</span>Complete the sign up form.
+                        </li>
+                        <li class="sign-up__item">
+                            <span>4</span>You are all set, start enjoy shopping
+                            in.
+                        </li>
+                    </ul>
                 </div>
                 <form action="" class="form" autocomplete="off">
-                    <h1 class="sign-in__heading">SIGN IN</h1>
+                    <h1 class="sign-up__heading">SIGN UP</h1>
                     <div class="form__group">
                         <i class="fa-solid fa-envelope"></i>
                         <input
@@ -31,20 +42,8 @@
                             placeholder="Email Address"
                         />
                     </div>
-                    <div class="form__group">
-                        <i class="fa-solid fa-lock"></i>
-                        <input
-                            type="password"
-                            name=""
-                            id=""
-                            class="form__input"
-                            placeholder="Password"
-                        />
-                        <button class="form__action">
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </button>
-                    </div>
-                    <a href="#!" class="form__link">Forgot password?</a>
+
+                    <button class="form__btn">Send Verification Mail</button>
                     <p class="form__desc">
                         Sign in with existing login from a social network
                         account

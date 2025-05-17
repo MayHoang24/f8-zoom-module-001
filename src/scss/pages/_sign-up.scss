@@ -1,0 +1,80 @@
+@use "../variables";
+@use "../mixins";
+
+.sign-up{
+    padding: 15px;
+    height: 100vh;
+    font-family: Quicksand;
+    background: url(./images/sign-in-bg.png) lightgray 50% / cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__inner{
+        width: 1016px;
+        padding-left: 70px;
+        border-radius: 45px;
+        background: rgba(255, 255, 255, 0.30);
+        box-shadow: 6px 12px 33.1px 0px rgba(229, 229, 229, 0.30);
+        backdrop-filter: blur(11.949999809265137px);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mixins.screen(lg) {
+            padding-left: 40px;
+        }
+
+         @include mixins.screen(md) {
+            flex-direction: column;
+            row-gap: 40px;
+            padding: 40px;
+        }
+    }
+
+    &__content{
+        max-width: 370px;
+    }
+
+    &__heading{
+        color: #404040;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.33;
+        text-transform: uppercase;
+    }
+
+    &__list{
+        margin-top: 18px;
+    }
+
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        color: #323232;
+        font-family: Quicksand;
+        font-weight: 600;
+
+        span{
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-shrink: 0;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            background: rgba(88, 88, 88, 0.1);
+            background-blend-mode: multiply;
+        }
+
+        &:not(:first-of-type){
+            margin-top: 12px;
+        }
+    }
+
+}
+
