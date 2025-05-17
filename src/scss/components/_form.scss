@@ -1,0 +1,79 @@
+@use "../variables";
+@use "../mixins";
+
+.form{
+    max-width: 510px;
+    padding: 86px 68px;
+    border-radius: inherit;
+    background: #FFF;
+
+    @include mixins.screen(lg) {
+        padding: 40px;
+    }
+
+    &__group{
+        padding-left: 24px;
+        padding-right: 6px;
+        width: 100%;
+        height: 48px;
+        border-radius: 999px;
+        background: #F2F2F2;
+        color: #323232;
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        &:first-of-type{
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+    }
+
+    &__input{
+        border: none;
+        outline: none;
+        background: transparent;
+
+        &::placeholder{
+            color: #AFAFAF;
+        }
+    }
+
+    &__btn{
+        margin-left: auto;
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: #ED5A25;
+        color: #FFF;
+    }
+
+    &__link{
+        display: block;
+        text-align: center;
+        margin-top: 23px;
+        color: #ED5A25;
+    }
+
+    &__desc{
+        margin-top: 47px;
+        color: #999;
+        text-align: center;
+        font-size: 1.4rem;
+        word-wrap: normal;
+    }
+
+    &__social{
+        margin-top: 21px;
+        font-size: 2rem;
+        color: #5C5C5C;
+
+        display: inline-flex;
+        align-items: center;
+        gap: 16px;
+
+        margin-left: 50%;
+        translate: -50%;
+    }
+}
