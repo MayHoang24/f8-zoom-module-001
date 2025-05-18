@@ -152,3 +152,21 @@
         line-height: 1.56;
     }
 }
+
+// ===Thumbnail===
+.thumbnail{
+    margin-top: 40px;
+
+    &__left, &__right{
+        height: 251px;
+        border-radius: 30px;
+        background: #FFF4F1;
+        overflow: hidden;
+
+        &--img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
