@@ -1,2 +1,101 @@
+@use "../components/button";
 @use "../variables";
 @use "../mixins";
+
+// Hero
+.hero{
+    position: relative;
+    padding: 23px 14px 47px ;
+    margin-top: 20px;
+    width: 100%;
+    min-height: 426px;
+    border-radius: 30px;
+    background: #FFDBCE;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    @include mixins.screen(lg) {
+        min-height: 596px;
+    }
+
+    &__thumb{
+        position: absolute;
+        top: 0;
+        right: 27px;
+        width: 960px;
+        height: 384px;
+        object-fit: cover;
+        aspect-ratio: 160 / 71;
+
+        @include mixins.screen(md) {
+            width: 700px;
+            object-fit: contain;
+        }
+    }
+
+    &__content{
+        position: absolute;
+        z-index: 1;
+        max-width: 370px;
+        text-align: center;
+        display: none;
+
+        @include mixins.screen(lg) {
+            display: block;
+        }
+    }
+
+    &__heading{
+        color: #323232;
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 1.25;
+    }
+
+    &__desc{
+        margin-top: 12px;
+        color: #3E3E3E;
+        font-family: Quicksand;
+        font-size: 1.2rem;
+        line-height: 1.65;
+    }
+
+    &__btn{
+        margin-left: 50%;
+        translate: -50%;
+
+        margin-top: 12px;
+        min-width: 142px;
+        height: 30px;
+        background: #ED5A25;
+        border-radius: 999px;
+
+        color: #FFF;
+        font-family: Quicksand;
+        font-size: 1.2rem;
+        font-weight: 500;
+        line-height: 1.43;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    &__action{
+        display: block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #FFECE5;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #ED5A25;
+        font-size: 0.9rem;
+    }
+}

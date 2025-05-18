@@ -9,7 +9,31 @@
     <body>
         <%- include("./partials/header.ejs") %>
         <main>
-            <div class="container"><h1>main</h1></div>
+            <div class="container">
+                <!-- Hero -->
+                <div class="hero">
+                    <img
+                        src="./images/hero-img.png"
+                        alt=""
+                        class="hero__thumb"
+                    />
+                    <div class="hero__content">
+                        <h1 class="hero__heading">
+                            Super saving gift card for new season
+                        </h1>
+                        <p class="hero__desc">
+                            Don't miss our limited-time offers! Discover current
+                            deals today!
+                        </p>
+                        <button class="btn hero__btn">
+                            View all
+                            <a href="#!" class="hero__action"
+                                ><i class="fa-solid fa-arrow-right"></i
+                            ></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <%- include("./partials/footer.ejs") %>
