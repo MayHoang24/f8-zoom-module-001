@@ -170,3 +170,312 @@
         }
     }
 }
+
+// ===Product===
+.product{
+    margin-top: 40px;
+
+    &__top{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        &-btn{
+            min-width: 150px;
+            height: 32px;
+            border-radius: 99px;
+            border: 1px solid #ED5A25;
+            box-shadow: 14px 21px 47.1px 0px #FEFEFE;
+
+            color: #ED5A25;
+            font-family: Quicksand;
+            font-size: 1.4rem;
+            font-weight: 600;
+            line-height: 1.43;
+
+            transition: all ease 0.4s;
+
+            &:hover{
+                background: var(--Primary-Colors, #ED5A25);
+                color: #fff;
+            }
+        }
+
+        .active{
+            min-width: 160px;
+            background: var(--Primary-Colors, #ED5A25);
+            color: #fff;
+        }
+    }
+
+    &__list{
+        --columns: 5;
+        --spacing: 24px;
+
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: calc(-1 * var(--spacing));
+        row-gap: var(--spacing);
+
+        @include mixins.screen(xl) {
+            --columns: 4;
+        }
+
+        @include mixins.screen(lg) {
+            --columns: 3;
+        }
+
+        @include mixins.screen(md) {
+            --columns: 2;
+        }
+    }
+
+    &__item{
+        padding: 12px;
+        border-radius: 30px;
+        border: 1px solid #F2F2F2;
+        background: #FFF;
+
+        width: calc(100% / var(--columns) - var(--spacing));
+        margin-left: var(--spacing);
+    }
+
+    &__thumb{
+        position: relative;
+        border-radius: 20px;
+        width: 100%;
+        height: 172px;
+        overflow: hidden;
+    }
+
+    &__img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 20px;
+    }
+
+    &__icon{
+        position: absolute;
+        top: 16px;
+        right: 14px;
+
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.90);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .icon{
+            font-size: 1.3rem;
+            color: #ED5A25;
+        }
+    }
+
+    &__content{
+        margin-top: 12px;
+        margin-left: 7px;
+        max-width: 162px;
+    }
+
+    &__title{
+        color: #000;
+        font-family: Poppins;
+        font-weight: 400;
+    }
+
+    &__price{
+        margin-top: 8px;
+        color: #ED5A25;
+        font-family: Quicksand;
+        font-weight: 600;
+    }
+
+    &__btn{
+        margin-top: 12px;
+        margin-left: 50%;
+        translate: -50%;
+        min-width: 190px;
+
+        color: #ED5A25;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+
+        transition: all ease 0.4s;
+
+        &-top{
+            min-width: 150px;
+            background: #fff;
+            border: 1px solid #FFF4F1;
+        }
+
+        &:hover{
+            background: #ED5A25;
+            color: #fff;
+        }
+    }
+
+    .active{
+        background: #ED5A25;
+        color: #fff;
+    }
+}
+
+// Top Seller
+.top-seller{
+    position: relative;
+    margin-top: 40px;
+    min-height: 295px;
+    border-radius: 30px;
+    background: #ED5A25;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    @include mixins.screen(md) {
+        justify-content: center;
+    }
+
+    &__content{
+        margin-left: 110px;
+        max-width: 370px;
+        text-align: center;
+        position: absolute;
+        z-index: 1;
+
+        @include mixins.screen(md) {
+            margin-left: 0;
+        }
+    }
+
+    &__heading{
+        color: #F2F2F2;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    &__desc{
+        margin-top: 14px;
+        color: #FFF;
+        font-family: Quicksand;
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+
+    &__btn{
+        margin-top: 16px;
+        border: 1px solid #ED5A25;
+        background: #F5F6F8;
+        color: #ED5A25;
+
+        font-size: 1.4rem;
+
+        transition: all ease 0.4s;
+
+        &:hover{
+            background: #ED5A25;
+            color: #fff;
+        }
+    }
+
+    &__action{
+        background: transparent;
+        color: inherit;
+    }
+
+    &__img{
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+// ======Product List======
+.product-list{
+    margin-top: 40px;
+
+    &__top{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include mixins.screen(md) {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 20px;
+        }
+    }
+
+    &__heading{
+        color: #323232;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    &__turn{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &--text{
+            color: #404040;
+            font-family: Quicksand;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+
+        &--wrap-btn{
+            display: flex;
+            gap: 8px;
+
+            .active{
+                background: #ED5A25;
+                color: #fff;
+            }
+        }
+
+        &--btn{
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background: #FFECE5;
+            color: #ED5A25;
+            font-size: 1.1rem;
+
+            transition: all ease 0.4s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover{
+                background: #ED5A25;
+                color: #fff;
+            }
+        }
+    }
+
+    &__inner{
+        margin-top: 35px;
+
+        & > .thumbnail{
+            margin-top: 0;
+        }
+    }
+
+    &__bottom{
+        margin-top: 38px;
+    }
+}

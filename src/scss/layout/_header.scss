@@ -216,6 +216,7 @@
     position: absolute;
     top: 30px;
     left: -91px;
+    z-index: 999;
 
     &__item{
         position: relative;
@@ -277,7 +278,7 @@
     top: -18px;
     left: 300px;
 
-    background: #949393;
+    background: #fff;
     width: 0;
     min-height: 370px;
     padding: 28px;
