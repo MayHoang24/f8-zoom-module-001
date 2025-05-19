@@ -439,20 +439,15 @@
         &--wrap-btn{
             display: flex;
             gap: 8px;
-
-            .active{
-                background: #ED5A25;
-                color: #fff;
-            }
         }
 
         &--btn{
-            width: 18px;
-            height: 18px;
+            width: 24px;
+            height: 24px;
             border-radius: 50%;
             background: #FFECE5;
             color: #ED5A25;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
 
             transition: all ease 0.4s;
 
@@ -461,6 +456,11 @@
             justify-content: center;
 
             &:hover{
+                background: #ED5A25;
+                color: #fff;
+            }
+
+            &.active{
                 background: #ED5A25;
                 color: #fff;
             }
@@ -478,4 +478,265 @@
     &__bottom{
         margin-top: 38px;
     }
+}
+
+// Product Sell Well
+.product-sell-well{
+    margin-top: 40px;
+
+    &__inner{
+        margin-top: 63px;
+        display: flex;
+        align-items: flex-start;
+        gap: 40px;
+
+        @include mixins.screen(lg) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__inner-left{
+        flex-grow: 1;
+        padding: 20px 16px;
+        min-width: 454px;
+        height: 100%;
+        border-radius: 30px;
+        background: #ED5A25;
+    }
+
+    &__thumb{
+        width: 100%;
+        height: 224px;
+        object-fit: cover;
+    }
+
+    &__content{
+        margin-top: 4px;
+        text-align: center;
+    }
+
+    &__title{
+        color: #FFF4F1;
+        font-size: 3.2rem;
+        font-weight: 600;
+    }
+
+    &__btn{
+        margin-left: 50%;
+        translate: -50%;
+
+        margin-top: 16px;
+        min-width: 117px;
+
+        border-radius: 100px;
+        border: 1px solid #FFF;
+        background: #FFF;
+
+        color: #ED5A25;
+        font-family: Quicksand;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.43;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > .icon-btn{
+            margin-left: 11px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: #FFECE5;
+
+            font-size: 1rem;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__inner-right{
+        margin-left: auto;
+
+        & > .product__list{
+            --columns: 3;
+
+            @include mixins.screen(xl) {
+                --columns: 2;
+            }
+
+            @include mixins.screen(xl) {
+                --columns: 3;
+            }
+
+            @include mixins.screen(md) {
+                --columns: 2;
+            }
+        }
+
+        
+    }
+}
+
+// =====Product New======
+.product-new{
+    margin-top: 40px;
+
+    &__inner{
+        margin-top: 20px;
+    }
+}
+
+// =====Product Block====
+.product-block{
+    margin-top: 40px;
+
+    &__col{
+        padding: 15px 16px 36px;
+        border-radius: 20px;
+        border: 1px solid #F2F2F2;
+        background: #FFF;
+    }
+
+    &__top{
+        padding: 0 17px;
+        width: 100%;
+        height: 52px;
+        border-radius: 10px;
+        background: #FFF4F1;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading{
+        color: #404040;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.56;
+    }
+
+    &__wrap-btn{
+        display: inline-block;
+        display: flex;
+        gap: 5px;
+
+        .active{
+            background: #ED5A25;
+            color: #fff;
+        }
+    }
+
+    &__btn{
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #fff;
+        font-size: 1.2rem;
+        color: #ED5A25;
+
+        transition: all ease 0.4s;
+
+        &:hover{
+            background: #ED5A25;
+            color: #fff;
+        }
+    }
+
+    &__item{
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 1.55rem;
+    }
+
+    &__title{
+        color: #000;
+        font-family: Poppins;
+        font-weight: 500;
+    }
+
+    &__price{
+        margin-top: 4px;
+        color: #ED5A25;
+        font-family: Quicksand;
+        font-weight: 600;
+    }
+
+    &__star{
+        margin-top: 4px;
+        color: #787777;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.43;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        & > strong{
+            color: #3E3E3E;
+            font-weight: 600;
+        }
+
+        & > .icon{
+            color: #ED5A25;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__thumb{
+        width: 80px; 
+        height: 70px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+}
+
+// News Promotion
+.news-promotion{
+    margin-top: 40px;
+
+    & > .product-list__top{
+        @include mixins.screen(md) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+
+    &__inner{
+        margin-top: 20px;
+    }
+
+    &__item{
+        padding: 23px;
+        border-radius: 20px;
+        border: 1px solid #EDEDED;
+        background: #FFF;
+    }
+
+    &__thumb{
+        width: 100%;
+        height: 265px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    &__desc{
+        margin-top: 20px;
+        color: #404040;
+        font-size: 1.55rem;
+        line-height: 1.4;
+    }
+}
+
+// Top Seller Bottom
+.top-seller-bottom{
+    margin-bottom: 57px;
+    background: #782000;
 }
