@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Collection</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <%- include("./partials/header.ejs") %>
+
+        <div class="container">
+            <div class="collection">
+                <aside class="sidebar">
+                    <nav class="sidebar__nav">
+                        <h2 class="sidebar__title">Danh mục sản phẩm</h2>
+                        <ul class="sidebar__list">
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Mobile Game Cards
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Game Cards
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Payment Cards
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Gift Cards
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Game Console
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Game CD-Key
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Video Streaming
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"> Music </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Shopping
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Telco Prepaid Cards
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link"> Tools </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Software
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Social App
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Freebie Codes
+                                </a>
+                            </li>
+                            <li class="sidebar__item">
+                                <a href="#!" class="sidebar__link">
+                                    Subscript
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <article class="sidebar__price-range">
+                        <h2 class="sidebar__title">Khoảng giá</h2>
+                        <form action="" class="form-price-range">
+                            <input
+                                type="range"
+                                class="form-price-range__input"
+                            />
+                            <p class="form-price-range__text">
+                                Price: <strong>500.000 - 1.000.000</strong>
+                            </p>
+                            <button class="btn form-price-range__btn">
+                                Lọc
+                            </button>
+                        </form>
+                    </article>
+                    <article class="sidebar__star">
+                        <h2 class="sidebar__title">Đánh giá</h2>
+                        <form action="" class="form-star">
+                            <!-- Row 1 -->
+                            <label class="form-star__label">
+                                <input
+                                    type="radio"
+                                    name="radio"
+                                    hidden
+                                    checked
+                                />
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <span> (120k)</span>
+                            </label>
+
+                            <!-- Row 2 -->
+                            <label class="form-star__label">
+                                <input type="radio" name="radio" hidden />
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (120k)</span>
+                            </label>
+
+                            <!-- Row 3 -->
+                            <label class="form-star__label">
+                                <input type="radio" name="radio" hidden />
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (120k)</span>
+                            </label>
+
+                            <!-- Row 4 -->
+                            <label class="form-star__label">
+                                <input type="radio" name="radio" hidden />
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (120k)</span>
+                            </label>
+
+                            <!-- Row 5 -->
+                            <label class="form-star__label">
+                                <input type="radio" name="radio" hidden />
+                                <i class="fa-solid fa-star icon"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span> (120k)</span>
+                            </label>
+                        </form>
+                    </article>
+                    <article class="sidebar__brand">
+                        <h2 class="sidebar__title">Thương hiệu</h2>
+                        <form action="" class="form-brand">
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Apple</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Google</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Microsoft</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Amazon</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>McDonald's</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Visa</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Tencent</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Louis Vuitton</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>MasterCard</span>
+                            </label>
+                            <label class="form-brand__label">
+                                <input type="checkbox" hidden />
+                                <span>Coca-Cola</span>
+                            </label>
+                        </form>
+                    </article>
+                    <article class="sidebar__bottom">
+                        <img
+                            src="./images/sidebar-img.png"
+                            alt=""
+                            class="sidebar__thumb"
+                        />
+                        <div class="sidebar__content">
+                            <h1 class="sidebar__heading">
+                                Card voucher hot news
+                            </h1>
+                            <button class="btn sidebar__btn">
+                                View all
+                                <div class="wrap-icon">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </article>
+                </aside>
+
+                <div class="collection__list">
+                    <p class="collection__desc">Showing 1-12</p>
+                    <div class="product__list">
+                        <!-- Item 1 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-1.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 2 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div
+                                    class="product__icon"
+                                    style="display: none"
+                                >
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-2.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn active">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 3 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-3.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 4 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-4.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 5 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-5.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 6 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-6.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 7 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-7.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 8 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-8.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 9 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-9.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 10 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-10.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 11 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-1.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 12 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div
+                                    class="product__icon"
+                                    style="display: none"
+                                >
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-2.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 13 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-3.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 14 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-4.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 15 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-5.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 16 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-6.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 17 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-7.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 18 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-8.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 19 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-9.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                        <!-- Item 20 -->
+                        <article class="product__item">
+                            <div class="product__thumb">
+                                <div class="product__icon">
+                                    <i class="fa-solid fa-heart icon"></i>
+                                </div>
+                                <img
+                                    src="./images/product-img-10.png"
+                                    alt=""
+                                    class="product__img"
+                                />
+                            </div>
+                            <div class="product__content">
+                                <h3 class="product__title">
+                                    Target Gift Card 50$ (US)- Order
+                                </h3>
+                                <p class="product__price">120.000 ~ 134.000</p>
+                            </div>
+                            <button class="btn product__btn">
+                                <i class="fa-solid fa-cart-plus"></i>
+                                Mua ngay
+                            </button>
+                        </article>
+                    </div>
+                    <div class="collection__turn-pages">
+                        <i class="fa-solid fa-arrow-left"></i>
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                        <span>4</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <%- include("./partials/footer.ejs") %>
+
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
