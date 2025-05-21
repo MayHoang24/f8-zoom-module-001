@@ -1,4 +1,4 @@
-@use "../components/button";
+
 @use "../variables";
 @use "../mixins";
 
@@ -304,7 +304,7 @@
 
         color: #ED5A25;
 
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: center;
         gap: 5px;

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Collection</title>
+        <%- include("./partials/head.ejs") %>
+    </head>
+    <body>
+        <main class="payment">
+            <div class="container">
+                <div class="payment__wrap">
+                    <h1 class="payment__heading">ONLINE PAYMENT</h1>
+                    <form action="" class="form" autocomplete="off">
+                        <div class="form-info">
+                            <h2 class="form__heading">
+                                Thông tin vận chuyển và thanh toán
+                            </h2>
+                            <div class="form-info__group">
+                                <label class="form-info__label">
+                                    <span>Tên</span>
+                                    <input
+                                        type="text"
+                                        class="form-info__input"
+                                        placeholder="Tên"
+                                    />
+                                </label>
+                                <label class="form-info__label">
+                                    <span>Email</span>
+                                    <input
+                                        type="email"
+                                        class="form-info__input"
+                                        placeholder="Email"
+                                    />
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-info-pay">
+                            <h2 class="form__heading">Thông tin thanh toán</h2>
+                            <div class="form-info-pay__wrap">
+                                <label class="form-info-pay__label">
+                                    <div class="form-info-pay__group">
+                                        <span>Số thẻ</span>
+                                        <input
+                                            class="form-info-pay__input"
+                                            type="text"
+                                            placeholder="Card Number"
+                                        />
+                                    </div>
+                                    <i class="fa-solid fa-credit-card icon"></i>
+                                </label>
+                                <label class="form-info-pay__label">
+                                    <div class="form-info-pay__group">
+                                        <span>Hết hạn</span>
+                                        <input
+                                            class="form-info-pay__input"
+                                            type="datetime"
+                                            placeholder="MM/YY"
+                                        />
+                                    </div>
+                                </label>
+                                <label class="form-info-pay__label">
+                                    <div class="form-info-pay__group">
+                                        <span>Cvc</span>
+                                        <input
+                                            class="form-info-pay__input"
+                                            type="number"
+                                            placeholder="xxx"
+                                        />
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                        <button class="btn payment__btn payment__btn--primary">
+                            Thanh toán
+                        </button>
+                        <button class="btn payment__btn">Hủy bỏ</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script type="module" src="./main.js"></script>
+    </body>
+</html>
