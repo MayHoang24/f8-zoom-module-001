@@ -1,0 +1,336 @@
+@use "../components/button";
+@use "../components/form";
+@use "../variables";
+@use "../mixins";
+
+.header-account{
+
+    &__top{
+        padding: 24px 0;
+        background: #ED5A25;
+    }
+
+    &__wrap{
+        display: flex;
+        align-items: center;
+
+        .form-search{
+            min-width: 547px;
+        }
+
+        .header-top__action{
+            margin-left: 133px;
+            color: #FFF;
+            font-family: Quicksand;
+            font-weight: 500;
+        }
+    }
+}
+
+.account{
+    &__position{
+        width: 100%;
+        height: 555px;
+        position: relative;
+    }
+
+    &__top{
+        height: 228px;
+        background: #FFF4F1;
+    }
+
+    &__thumb{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content{
+        position: absolute;
+        top: -107px;
+        left: 0;
+        right: 0;
+        display: flex;
+        gap: 24px;
+    }
+
+    &__heading{
+        margin-top: 24px;
+        color: #323232;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.account-left{
+    width: 366px;
+    padding: 46px 56px 100px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+
+    &__top{
+        width: 175px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    &__thumb{
+        position: relative;
+    }
+
+    &__avatar{
+        width: 100%;
+        height: 173px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+
+    &__icon{
+        position: absolute;
+        bottom: 10px;
+        right: 16px;
+
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #ED5A25;
+        color: #fff;
+        font-size: 1.2rem;
+        border: 3px solid #fff;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__btn{
+        margin-top: 12px;
+        margin-bottom: 29px;
+        min-width: 134px;
+        height: 23px;
+        background: #FFDBCE;
+
+        color: #323232;
+        font-size: 1.2rem;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: all ease 0.4s;
+
+        &:hover{
+            background: #ED5A25;
+            color: #fff;
+        }
+    }
+
+    &__bottom{
+        margin-top: 40px;
+
+        .active{
+            border-radius: 20px;
+            background: #FFF4F1;
+            box-shadow: -5px 4px 17.3px 0px rgba(248, 248, 248, 0.50);
+
+            & > .account-left__link--icon{
+                background: #ED5A25;
+                color: #fff;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                font-size: 1rem;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+    &__link{
+        padding: 0 20px;
+        color: #454545;
+        font-family: Quicksand;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 42px;
+
+        display: flex;
+        align-items: center;
+        gap: 24px;
+
+        transition: all ease 0.4s;
+
+        &:hover{
+            border-radius: 20px;
+            background: #FFF4F1;
+            box-shadow: -5px 4px 17.3px 0px rgba(248, 248, 248, 0.50);
+
+            & > .account-left__link--icon{
+                background: #ED5A25;
+                color: #fff;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                font-size: 1rem;
+                
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                transition: all ease 0.4s;
+            }
+        }
+    }
+}
+
+.account-right{
+    padding: 25px 30px 50px;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+
+    &__content{
+        margin-top: 24px;
+        display: flex;
+        gap: 40px;
+    }
+
+    &__wrapper{
+        padding: 16px 26px 30px;
+        width: 50%;
+        border-radius: 20px;
+        border: 1px solid var(--Greys-Colors-05, #E5E5E5);
+        background: #FFF;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title{
+        margin-bottom: 25px;
+        color: #353535;
+        font-family: Quicksand;
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    &__wrap{
+        margin-top: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        color: #ED5A25;
+        font-family: Quicksand;
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+
+    &__btn{
+        display: inline-block;
+        min-width: 72px;
+        height: 23px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        color: #323232;
+        font-size: 1.2rem;
+
+        transition: all ease 0.4s;
+
+        &:hover{
+            background: #ED5A25;
+            color: #fff;
+        }
+
+    }
+
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__see-more{
+        position: relative;
+        margin-bottom: 25px;
+        color: rgba(127, 127, 127, 0.50);
+        font-size: 1.2rem;
+        margin-right: 10px;
+
+        &::after{
+            position: absolute;
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-left: 1px solid currentColor;
+            border-bottom: 1px solid currentColor;
+            top: 3px;
+            right: -10px;
+            rotate: -135deg;
+        }
+    }
+
+    &__wrap-history{
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__info{
+        color: #454545;
+        text-align: center;
+        width: 77px;
+        font-family: Quicksand;
+        font-size: 1.2rem;
+        font-weight: 500;
+
+        & > span{
+            display: block;
+            margin-bottom: 8px;
+            color: #ED5A25;
+            font-family: Quicksand;
+            font-size: 2rem;
+            font-weight: 600;
+        }
+    }
+}
+
+.dashed-line{
+    position: relative;
+    width: 100%;
+    border-top: 1px dashed #E5E5E5;
+
+    &::before, &::after{
+        position: absolute;
+        content: "";
+        width: 8px;
+        height: 8px;
+        background: #E5E5E5;
+        border-radius: 50%;
+        top: -5px;
+    }
+
+    &::before{
+        left: -2px;
+    }
+
+    &::after{
+        right: -2px;
+    }
+}

@@ -5,7 +5,7 @@ import { sign } from "crypto";
 
 export default defineConfig({
     // Đường dẫn gốc khi deploy (gh-pages cần đúng path)
-    base: process.env.NODE_ENV === "production" ? "/f8-zoom-module-1" : "/",
+    base: process.env.NODE_ENV === "production" ? "/f8-zoom-module-001" : "/",
 
     // Thư mục chính chứa HTML, SCSS, JS
     root: "src",
